@@ -9,34 +9,26 @@ Visit the site here - [Travellog](#)
 The Idea behind **Travellog** is to create a web based explorer for people and view people thought about the place and it's features.
 
 # Technology Stack Used:
-<a href="#" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/ahamedbasha-n/be_well/main/images/velo.png" alt="html5" width="40" height="40"/> </a>
+<a href="#" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
+<a href="#" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
+<a href="#" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
+<a href="#" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
+
 
 ## Structure of the Project:
-
 1. Home Page
-2. Authentication Page
-3. Booking a Service Page
-4. Recipe Page for healthy food
-5. E-Commerce Page - includes healthy & fitness products.
-6. Account Holder Page - includes your orders, addresses, payments and profile.
-7. Chat Support
+2. City Specific Page
+3. Tourist Page
+
 
 ## Challenges I ran into 💻
-- Fixing Dynamic Pages within another page and maintaining right databases.
-- Authentication (Login/Logout).
-- Understanding the functionality of the items inside the pages.
+- Authentication (Login/Logout) which was an issue and was not able to implement in this project.
 
 ## Accomplishments that I'm proud of 🏆
-This is the **First Time** I'm using [Wix](https://www.wix.com/velo) and I am very surprised with the features. Specially Integrating an E-commerce was a wonderful learning experience to me.
+This is the **First Time** I'm using **jQuery** and managed to come up with this project.
 
-## Few specific things I learnt using Velo by Wix 📚
-1. Pages - Main & Dynamic
-2. Add Interactions to Pages
-3. Integrating Store
-4. User Authentication (Login/Logout)
-5. Using Databases
-6. Integrate Payment Methods
-7. Add Apps for additional functionality and more.
+## What it does?
+This hackathon project is my attempt to gather data about tourist places across India and display it one place. Travellog includes facilities, geographical representation and thoughts from different people about the tourist places.
 
 ## Show your support
 
