@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travellog</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--
+
+        Nav Bar
+
+    -->
+        <nav x-data="{show:false}" class="flex items-center justify-between flex-wrap bg-green-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight"><a href="index.html">Travellog</a></span>
+        </div>
+        <div class="block md:hidden">
+          <button @click="show=!show" class="flex items-center px-3 py-2 border rounded text-gray-100 border-gray-200 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div @click.away="show = false" :class="{ 'block': show, 'hidden': !show }" class="w-full block flex-grow md:flex md:justify-end md:w-auto">
+        </div>
+      </nav>
+
+    <!-- 
+
+        Hero content
+    
+    -->
+      <div style="padding: 40px;">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Let's <mark class="px-2 text-white bg-green-600 rounded dark:bg-blue-500">explore</mark> around us!</h1>
+        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">We help you in supporting cultural diversity and heritage around the world to learn about new cultures.</p>
+        <h1 class="text-3xl font-extrabold dark:text-white">Select any city you want to explore:</h1>
+    </div>
+
+
+    <!--
+
+        Containers or City Cards
+
+    -->
+
+
+    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+      <!--Card 1-->
+      <div class="rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="images/delhi.jpg" alt="Mountain">
+        <div class="px-6 py-4">
+          <div class="font-bold text-4xl"><a href="delhi.html">Delhi</a></div>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#capital</span>
+          <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#north</span>
+          <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#food</span>
+        </div>
+      </div>
+      <!--Card 2-->
+      <div class="rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="images/mumbai.jpg" alt="River">
+        <div class="px-6 py-4">
+          <div class="font-bold text-4xl mb-2"><a href="mumbai.html">Mumbai</a></div>
+ 
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#beach</span>
+          <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#metropolitan</span>
+          <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#west_cost</span>
+        </div>
+      </div>
+  
+      <!--Card 3-->
+      <div class="rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="images/kolkata.png" alt="Forest">
+        <div class="px-6 py-4">
+          <div class="font-bold text-4xl mb-2"><a href="kolkata.html">Kolkata</a></div>
+
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#westbengal</span>
+          <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#traditional</span>
+          <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#food</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+    <!--Card 1-->
+    <div class="rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="images/hyderabad.png" alt="Mountain">
+      <div class="px-6 py-4">
+        <div class="font-bold text-4xl"><a href="hyderabad.html">Hyderabad</a></div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#historical monuments</span>
+        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#biriyani</span>
+        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#winter</span>
+      </div>
+    </div>
+    <!--Card 2-->
+    <div class="rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="images/chennai.png" alt="River">
+      <div class="px-6 py-4">
+        <div class="font-bold text-4xl mb-2"><a href="chennai.html">Chennai</a></div>
+
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#temples</span>
+        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#food</span>
+        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#summer</span>
+      </div>
+    </div>
+
+    <!--Card 3-->
+    <div class="rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="images/kerala.jpg" alt="Forest">
+      <div class="px-6 py-4">
+        <div class="font-bold text-4xl mb-2"><a href="kerala.html">Kerala</a></div>
+
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#backwaters</span>
+        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#ecotour</span>
+        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-black-700 mr-2 mb-2">#mouthwatering cuisine</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+
+  Footer 
+
+
+-->
+
+<footer
+  class="bg-neutral-200 text-center text-white dark:bg-neutral-600 dark:text-neutral-200">
+  <div class="container p-6">
+    <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-6">
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/1.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/2.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/3.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/4.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/5.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/6.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="bg-green-300 p-4 text-center text-white-700 dark:bg-neutral-700 dark:text-neutral-200">
+    Made with Love for Explorers 🌍
+  </div>
+</footer>
+</body>
+</html>

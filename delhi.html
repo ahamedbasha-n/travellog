@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+        <!--
+
+        Nav Bar
+
+    -->
+    <nav x-data="{show:false}" class="flex items-center justify-between flex-wrap bg-green-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight"><a href="index.html">Travellog</a></span>
+        </div>
+        <div class="block md:hidden">
+          <button @click="show=!show" class="flex items-center px-3 py-2 border rounded text-gray-100 border-gray-200 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+      </nav>
+
+      <div style="padding: 40px;">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Welcome to <mark class="px-2 text-white bg-green-600 rounded dark:bg-blue-500">Delhi</mark></h1>
+        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Delhi, officially the National Capital Territory (NCT) of Delhi, is a city and a union territory of India containing New Delhi, the capital of India.</p>
+    </div>
+
+    <!-- 
+        
+        Weather
+    
+    -->
+    <a class="weatherwidget-io" href="https://forecast7.com/en/28d7077d10/delhi/" data-label_1="DELHI" data-label_2="WEATHER" data-font="Helvetica" data-icons="Climacons" data-mode="Current" data-days="3" data-basecolor="#10b981" data-textcolor="#ffffff" >DELHI WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+
+
+<!-- 
+    
+    Tourist 
+
+-->
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-5xl text-2xl font-medium title-font mb-2 text-gray-900">Do you know?</h1>
+          <div class="h-1 w-20 bg-green-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-black-500 text-2xl">Delhi is the home to the largest market of spices in Asia</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/tourist/lotus.png" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4"><a href="lotus.html">Lotus Temple</a></h2>
+            <p class="leading-relaxed text-base">The Lotus Temple, located in Delhi, India, is a Baháʼí House of Worship that was dedicated in December 1986.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/tourist/redfort.png" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4"><a href="red_fort.html">Red Fort</a></h2>
+            <p class="leading-relaxed text-base">The Red Fort or Lal Qila is a historic fort in Old Delhi, Delhi in India that served as the main residence of the Mughal Emperors.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/tourist/jamia_masjid.png" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4"><a href="jamia_masjid.html">Jama Masjid</a></h2>
+            <p class="leading-relaxed text-base">The Masjid-i-Jehan-Numa, commonly known as the Jama Masjid of Delhi, is one of the largest mosques in India.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/tourist/taj.png" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4"><a href="taj.html">Taj Mahal</a></h2>
+            <p class="leading-relaxed text-base">The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>

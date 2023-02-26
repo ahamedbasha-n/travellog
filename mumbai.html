@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+        <!--
+
+        Nav Bar
+
+    -->
+    <nav x-data="{show:false}" class="flex items-center justify-between flex-wrap bg-green-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight"><a href="index.html">Travellog</a></span>
+        </div>
+        <div class="block md:hidden">
+          <button @click="show=!show" class="flex items-center px-3 py-2 border rounded text-gray-100 border-gray-200 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div @click.away="show = false" :class="{ 'block': show, 'hidden': !show }" class="w-full block flex-grow md:flex md:justify-end md:w-auto">
+          <div>
+            <a href="quiz.html" class="block md:inline-block text-lg px-4 py-2 leading-none rounded text-white border-white hover:border-transparent hover:text-green-500 hover:bg-white mt-4 md:mt-0">Quiz</a>
+             <a href="#" class="block md:inline-block text-lg px-4 py-2 leading-none rounded text-green border-white hover:border-transparent bg-white mt-4 md:mt-0">Logout</a>
+          </div>
+        </div>
+      </nav>
+
+      <div style="padding: 40px;">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Welcome to <mark class="px-2 text-white bg-green-600 rounded dark:bg-blue-500">Mumbai</mark></h1>
+        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924.</p>
+    </div>
+
+    <a class="weatherwidget-io" href="https://forecast7.com/en/19d0872d88/mumbai/" data-label_1="MUMBAI" data-label_2="WEATHER" data-font="Helvetica" data-icons="Climacons" data-mode="Current" data-theme="original" data-basecolor="#10b981" >MUMBAI WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+
+
+
+<!-- 
+    
+    Tourist 
+
+-->
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-5xl text-2xl font-medium title-font mb-2 text-gray-900">Do you know?</h1>
+          <div class="h-1 w-20 bg-green-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-black-500 text-2xl">Mumbai is India's most electric city.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/tourist/gateway.png" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4"><a href="gateway.html">Gateway of India</a></h2>
+            <p class="leading-relaxed text-base">The Gateway of India is an arch-monument built in the early 20th century in the city of Mumbai, India.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/tourist/mumbai_hotel.png" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4"><a href="mumbai_hotel.html">Taj Mahal Palace Hotel</a></h2>
+            <p class="leading-relaxed text-base">The Taj Mahal Palace is a heritage, five-star luxury hotel in the Colaba area of Mumbai.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/tourist/shree siddhivinayak.png" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4"><a href="shree.html">Shree Siddhivinayak</a></h2>
+            <p class="leading-relaxed text-base">Shree Ganesh is the first to be worshipped before beginning venture as he is the destroyer of obstacles.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="images/tourist/Global Vipassana Pagoda.png" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4"><a href="global.html">Global Vipassana Pagoda</a></h2>
+            <p class="leading-relaxed text-base">Global Vipassana Pagoda is an expression of our gratitude towards the Buddha who strived for incalculable aeons.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

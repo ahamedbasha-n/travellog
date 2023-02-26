@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Temple</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="comments.css">
+    <style>
+        .map-wrapper{
+            margin-top: 40px;
+            margin-left: 25%;
+            width: 50%;
+            border: 2px solid green;;
+        }
+
+        .googlemap{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+
+        Nav Bar
+
+    -->
+        <nav x-data="{show:false}" class="flex items-center justify-between flex-wrap bg-green-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight"><a href="index.html">Travellog</a></span>
+        </div>
+        <div class="block md:hidden">
+          <button @click="show=!show" class="flex items-center px-3 py-2 border rounded text-gray-100 border-gray-200 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+      </nav>
+
+
+
+
+
+
+      <!-- 
+        
+        Body
+      
+      -->
+
+      <!--
+
+
+        Title
+
+
+      -->
+
+      <div style="margin-left: 25%; padding-top: 20px;">
+        <h1 class="text-4xl font-extrabold dark:text-white">This is Lotus Temple!</h1>
+    </div>
+
+
+      <div class="map-wrapper">
+
+        <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.5417011398795!2d77.25663771508087!3d28.553491982448936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3c16e028cd1%3A0x653beb1ee85ec67a!2sLotus%20Temple!5e0!3m2!1sen!2sin!4v1677270642093!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+
+      <div style="height: 90px; background-color: #059669; margin-top: 20px; width: 50%; margin-left: 25%; border-radius: 10px;">
+
+
+      <abbr title="eco-friendly"><i style="padding-left: 35px; padding-right:10px; padding-top:10px;" class="fa-solid fa-4x fa-leaf"></i></abbr>
+      <abbr title="parking_support"><i style="padding-left: 35px; padding-right:10px; padding-top:10px;" class="fa-solid fa-4x fa-car"></i></abbr>
+      <abbr title="medical_support"><i style="padding-left: 35px; padding-right:10px; padding-top:10px;" class="fa-solid fa-4x fa-truck-medical"></i></abbr>
+      <abbr title="pet_friendly"><i style="padding-left: 35px; padding-right:10px; padding-top:10px;" class="fa-solid fa-4x fa-dog"></i></abbr>
+      <abbr title="wifi_support"><i style="padding-left: 35px; padding-right:10px; padding-top:10px;" class="fa-solid fa-4x fa-wifi"></i></abbr>
+      <abbr title="open=10am to 4pm"><i style="padding-left: 35px; padding-right:10px; padding-top:10px;" class="fa-solid fa-4x fa-clock"></i></abbr>
+      </div>
+      
+
+      <!-- 
+        
+        Comments Section 
+      
+      -->
+
+
+      <div class="form">
+        <h4>Add your comments</h4>
+    Name: <input type="text" id="name"/> <br> <br>
+    Date: <input type="date" id="date"/> <br> <br>
+    Body: <textarea id="bodyText" cols="30" rows="5"></textarea> <br> <br>
+    <input type="button" id="addComment" value="Submit"> 
+    </div>
+
+    <div id="container">
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="comments.js" type="text/javascript"></script>
+
+      <!--
+        
+        Footer 
+      
+      -->
+
+      <footer
+  class="bg-neutral-200 text-center text-white dark:bg-neutral-600 dark:text-neutral-200">
+  <div class="container p-6">
+    <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-6">
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/1.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/2.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/3.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/4.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/5.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+      <div class="mb-6 lg:mb-0">
+        <img
+          src="images/travel/6.png"
+          class="w-full rounded-md shadow-lg" />
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="bg-green-300 p-4 text-center text-white-700 dark:bg-neutral-700 dark:text-neutral-200">
+    Made with Love for Explorers 🌍
+  </div>
+</footer>
+</body>
+</html>
