@@ -1,4 +1,4 @@
-# Travellog 🧳
+![cropped](https://user-images.githubusercontent.com/69695103/221406414-4ffca23e-5b15-4533-a9a5-500561373a58.png)
 A virtual explorer for everyone.
 This project is submitted for [MLH - Hack Around the World 2 Hackathon](https://hack-around-the-world-2.devpost.com/)
 
