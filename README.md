@@ -12,7 +12,6 @@ The Idea behind **Travellog** is to create a web based explorer for people and v
 <a href="#" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
 <a href="#" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
 
-
 ## Structure of the Project:
 1. Home Page
 2. City Specific Page
@@ -25,6 +24,8 @@ Travellog allows to explore different places across India and It display:
 - Weather information as well as activity advice based on weather.
 - Precise Google Map on the location of the place.
 - User submitted reviews and feedback about the place.
+## Demo Video
+https://user-images.githubusercontent.com/69695103/221406144-aa97c5eb-33dc-48d5-870f-dc28106172ca.mp4
 
 ## Challenges I ran into 💻
 - Authentication (Login/Logout) which was an issue and was not able to implement in this project.
@@ -42,6 +43,8 @@ Up-next is to develop a fully end-to-end encrypted web application with Authenti
 <a href="https://github.com/ahamedbasha-n/travellog/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ahamedbasha-n/travellog"/>
 </a>
+
+
 
 ## Show your support
 
