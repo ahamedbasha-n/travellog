@@ -2,8 +2,6 @@
 A virtual explorer for everyone.
 This project is submitted for [MLH - Hack Around the World 2 Hackathon](https://hack-around-the-world-2.devpost.com/)
 
-Visit the site here - [Travellog](#)
-
 -----
 
 The Idea behind **Travellog** is to create a web based explorer for people and view people thought about the place and it's features.
@@ -20,6 +18,13 @@ The Idea behind **Travellog** is to create a web based explorer for people and v
 2. City Specific Page
 3. Tourist Page
 
+## What it does?
+Travellog allows to explore different places across India and It display:
+- Name, location and description of place.
+- Details about the place like (fee, parking, pet-friendly, picnic area, medical-support, wifi, etc.)
+- Weather information as well as activity advice based on weather.
+- Precise Google Map on the location of the place.
+- User submitted reviews and feedback about the place.
 
 ## Challenges I ran into 💻
 - Authentication (Login/Logout) which was an issue and was not able to implement in this project.
@@ -27,8 +32,13 @@ The Idea behind **Travellog** is to create a web based explorer for people and v
 ## Accomplishments that I'm proud of 🏆
 This is the **First Time** I'm using **jQuery** and managed to come up with this project.
 
-## What it does?
-This hackathon project is my attempt to gather data about tourist places across India and display it one place. Travellog includes facilities, geographical representation and thoughts from different people about the tourist places.
+## What I learned 📚
+I learned several things over this weekend, making every second I spent on this hackathon fully worthwhile.
+
+## Team Members:
+<a href="https://github.com/ahamedbasha-n/travellog/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ahamedbasha-n/travellog"/>
+</a>
 
 ## Show your support
 
