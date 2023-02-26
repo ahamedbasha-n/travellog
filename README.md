@@ -35,6 +35,9 @@ This is the **First Time** I'm using **jQuery** and managed to come up with this
 ## What I learned 📚
 I learned several things over this weekend, making every second I spent on this hackathon fully worthwhile.
 
+## What's next for Travellog:
+Up-next is to develop a fully end-to-end encrypted web application with Authentication and more features.
+
 ## Team Members:
 <a href="https://github.com/ahamedbasha-n/travellog/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ahamedbasha-n/travellog"/>
